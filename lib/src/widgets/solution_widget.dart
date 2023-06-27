@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../flagship_text_theme.dart';
-import '../models/models_barrel.dart';
+import '../models/models.dart';
 
 class SolutionWidget extends StatelessWidget {
   const SolutionWidget(

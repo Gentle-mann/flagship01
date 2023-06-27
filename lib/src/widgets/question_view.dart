@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 import '../flagship_text_theme.dart';
-import '../models/models_barrel.dart';
-import 'widgets_barrel.dart';
+import '../models/models.dart';
+import 'widgets.dart';
 
 class QuestionView extends StatelessWidget {
   const QuestionView({

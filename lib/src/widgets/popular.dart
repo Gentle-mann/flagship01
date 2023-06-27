@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../models/models_barrel.dart';
+import '../models/models.dart';
 import '../screens/category_screen.dart';
 import 'category_popular_detail.dart';
 

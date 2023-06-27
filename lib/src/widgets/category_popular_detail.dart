@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 
-import '../models/models_barrel.dart';
+import '../models/models.dart';
+import 'category_popular_description.dart';
+import 'category_popular_image.dart';
 
 class CategoryPopularDetail extends StatelessWidget {
   const CategoryPopularDetail(
@@ -24,51 +24,15 @@ class CategoryPopularDetail extends StatelessWidget {
           children: [
             Expanded(
               flex: 4,
-              child: _buildCategoryPopularImage(context),
+              child: CategoryPopularImage(category: category),
             ),
             const SizedBox(height: 16),
             Expanded(
               flex: 1,
-              child: _buildCategoryPopularDescription(),
+              child: CategoryPopularDescription(category: category),
             ),
           ],
         ),
-      ),
-    );
-  }
-
-  Widget _buildCategoryPopularImage(BuildContext context) {
-    return Container(
-      height: MediaQuery.of(context).size.height * 0.2,
-      decoration: BoxDecoration(
-        image: DecorationImage(
-          image: AssetImage(
-            category.imageUrl!,
-          ),
-          fit: BoxFit.cover,
-        ),
-        borderRadius: BorderRadius.circular(20),
-        color: category.backgroundColor,
-      ),
-    );
-  }
-
-  Widget _buildCategoryPopularDescription() {
-    return SizedBox(
-      height: 150,
-      child: Column(
-        children: [
-          Text(
-            category.name,
-            style: TextStyle(
-              color: category.backgroundColor,
-            ),
-          ),
-          const SizedBox(
-            height: 8,
-          ),
-          Text(category.description),
-        ],
       ),
     );
   }

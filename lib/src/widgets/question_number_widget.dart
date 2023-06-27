@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../models/question.dart';
-import 'widgets_barrel.dart';
+import 'widgets.dart';
 
 class QuestionNumber extends StatelessWidget {
   const QuestionNumber({

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../models/category.dart';
 
-import 'widgets_barrel.dart';
+import 'widgets.dart';
 
 class QuestionsWidget extends StatelessWidget {
   const QuestionsWidget({

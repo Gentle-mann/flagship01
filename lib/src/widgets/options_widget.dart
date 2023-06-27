@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../models/option.dart';
 import '../models/question.dart';
-import 'widgets_barrel.dart';
+import 'widgets.dart';
 
 class OptionsWidget extends StatefulWidget {
   const OptionsWidget({
@@ -33,13 +33,15 @@ class _OptionsWidgetState extends State<OptionsWidget> {
   }
 
   void selectOption(Option option, Question question) {
-    setState(() {
-      if (question.isLocked) {
-        return;
-      } else {
-        question.isLocked = true;
-        question.selectedOption = option;
-      }
-    });
+    setState(
+      () {
+        if (question.isLocked) {
+          return;
+        } else {
+          question.isLocked = true;
+          question.selectedOption = option;
+        }
+      },
+    );
   }
 }

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../models/models_barrel.dart';
-import 'widgets_barrel.dart';
+import '../models/models.dart';
+import 'widgets.dart';
 
 class CategoriesWidget extends StatelessWidget {
   const CategoriesWidget({super.key});
@@ -11,7 +11,6 @@ class CategoriesWidget extends StatelessWidget {
     return SizedBox(
       height: MediaQuery.of(context).size.height * 0.3,
       child: GridView(
-        shrinkWrap: true,
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
           mainAxisSpacing: 12,

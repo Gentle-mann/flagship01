@@ -1,4 +1,4 @@
-import 'package:flagship/src/widgets/widgets_barrel.dart';
+import 'package:flagship/src/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 
 import '../flagship_text_theme.dart';
@@ -11,7 +11,7 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        backgroundColor: Colors.transparent,
+        backgroundColor: Colors.white,
         elevation: 0,
         actions: [
           IconButton(
@@ -31,7 +31,6 @@ class HomeScreen extends StatelessWidget {
             ),
           ),
         ],
-        flexibleSpace: Container(),
         bottom: PreferredSize(
           preferredSize: const Size.fromHeight(150),
           child: Container(

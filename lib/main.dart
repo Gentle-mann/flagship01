@@ -3,16 +3,16 @@ import 'package:flutter/material.dart';
 import 'src/screens/home_screen.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const Flagship());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class Flagship extends StatelessWidget {
+  const Flagship({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Flagship',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,

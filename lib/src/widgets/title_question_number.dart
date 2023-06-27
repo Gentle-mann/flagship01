@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../models/models_barrel.dart';
+import '../models/models.dart';
 
 class TitleQuestionNumber extends StatelessWidget {
   const TitleQuestionNumber({

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'question.dart';
-import '../models/models_barrel.dart';
+import 'models.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class Category {
@@ -10,7 +10,7 @@ class Category {
   final Color backgroundColor;
   final IconData icon;
   final List<Question> categoryQuestions;
-  final String? imageUrl;
+  final String imageUrl;
 
   Category({
     required this.name,

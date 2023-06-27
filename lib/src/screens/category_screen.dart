@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../flagship_text_theme.dart';
 import '../models/category.dart';
 import '../models/question.dart';
-import '../widgets/widgets_barrel.dart';
+import '../widgets/widgets.dart';
 
 class CategoryScreen extends StatefulWidget {
   const CategoryScreen({super.key, required this.category});
@@ -31,7 +31,7 @@ class _CategoryScreenState extends State<CategoryScreen> {
         backgroundColor: Colors.white,
         appBar: AppBar(
           elevation: 0,
-          backgroundColor: Colors.transparent,
+          backgroundColor: Colors.white,
           title: Text(
             widget.category.name,
             style: FlagshipTheme.lightTextTheme.displayMedium,

@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../flagship_text_theme.dart';
 import '../models/option.dart';
 import '../models/question.dart';
-import 'widgets_barrel.dart';
+import 'widgets.dart';
 
 class OptionCard extends StatelessWidget {
   const OptionCard({
